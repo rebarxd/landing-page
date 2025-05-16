@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* hero section */
+.hero{
+    background-color: #1f2937;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: auto;
+    max-width: 1400px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.header a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e5e7eb;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3882f6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: cyan;
+}
+
+.right {
+    width: 45%;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 250px;
+    background-color: #374151;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* mid section */
+.container-mid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+.items-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+}
+
+.box {
+    width: 160px;
+    height: 160px;
+    border: 2px solid #4299e1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    width: 160px;
+}
+
+@media (max-width: 768px) {
+    .items-container {
+        gap: 20px;
+    }
+    
+    .item, .box, .subtext {
+        width: 140px;
+    }
+    
+    .box {
+        height: 140px;
+    }
+}
